@@ -38,8 +38,6 @@ podiff/
     evaluate_samples.py
   utils/
 
-experimental/
-  data/, models/                     # unused experimental files kept outside default pipeline
 ```
 
 ---
