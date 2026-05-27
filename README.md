@@ -65,12 +65,10 @@ where:
 - Accepted shapes are `(N,H,W)`, `(N,H,W,1)`, or `(N,1,H,W)`.
 - NaNs are allowed and are converted to zero after normalization; valid ocean pixels are tracked through a mask.
 
-Place the paper-style training file at:
-
+The paper-style training file is:
 ```text
 data/training_data.npz
 ```
-
 or update the `npz_path` field in the JSON configs.
 
 > Note: The paper uses temporal splits for the SST experiments: training on 1998–2009, validation on 2010, and testing on 2011. These scripts assume that the user supplies the appropriate pre-split `.npz` files or adjusts the configs accordingly.
@@ -244,6 +242,7 @@ export RESULT_ROOT=/path/to/PODiff_codebase
 ## Citation
 
 Please cite the PODiff paper as:
+```bibtex
 @misc{jadhav2026podifflatentdiffusionproper,
       title={PODiff: Latent Diffusion in Proper Orthogonal Decomposition Space for Scientific Super-Resolution}, 
       author={Onkar Jadhav and Tim French and Matthew Rayson and Nicole L. Jones},
@@ -253,3 +252,4 @@ Please cite the PODiff paper as:
       primaryClass={cs.LG},
       url={https://arxiv.org/abs/2605.03399}, 
 }
+```
