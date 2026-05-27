@@ -1,0 +1,16 @@
+{
+  "dataset": "sst_npz",
+  "npz_path": "data/training_data.npz",
+  "norm_mode": "joint",
+  "stats_out": "outputs/sst_stats.json",
+  "n_components_max": 40,
+  "energy": 0.99,
+  "fit_samples": null,
+  "batch_size": 256,
+  "num_workers": 0,
+  "seed": 0,
+  "pod_out": "artifacts/pod_sst.npz",
+  "cache_dir": "cache",
+  "write_cache": true,
+  "cache_batch_size": 4
+}
